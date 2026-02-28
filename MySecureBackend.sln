@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.1.11312.151 d18.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySecureBackend.WebApi", "MySecureBackend.WebApi\MySecureBackend.WebApi.csproj", "{977C502C-8275-4B1D-820E-3FE0E2059658}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySecureBackend.Tests", "MySecureBackend.Tests\MySecureBackend.Tests.csproj", "{D304675F-DBF9-41F5-B490-8C5FEF4CC6A6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Files", "Solution Files", "{F874DEB3-668D-4F21-AB84-491F1649FEBC}"
+	ProjectSection(SolutionItems) = preProject
+		.sql\database_creation_script.sql = .sql\database_creation_script.sql
+		.github\workflows\github_workflow_simplified.yaml = .github\workflows\github_workflow_simplified.yaml
+		readme.md = readme.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{977C502C-8275-4B1D-820E-3FE0E2059658}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{977C502C-8275-4B1D-820E-3FE0E2059658}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{977C502C-8275-4B1D-820E-3FE0E2059658}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{977C502C-8275-4B1D-820E-3FE0E2059658}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D304675F-DBF9-41F5-B490-8C5FEF4CC6A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D304675F-DBF9-41F5-B490-8C5FEF4CC6A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D304675F-DBF9-41F5-B490-8C5FEF4CC6A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D304675F-DBF9-41F5-B490-8C5FEF4CC6A6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {075C4609-8527-4974-895C-5194DC2EE425}
+	EndGlobalSection
+EndGlobal
