@@ -69,15 +69,15 @@ public class EnvironmentsController : ControllerBase
             return BadRequest("Name must be between 1 and 25 characters long.");
         }
 
-        List<Environment2D> UserEnvs = (List<Environment2D>)await _environmentRepository.SelectAsync(_authenticationService.GetCurrentAuthenticatedUserId());
-        if (UserEnvs.Exists(x=>x.Name==environment2D.Name))
+        if ((await _environmentRepository.SelectAsync(_authenticationService.GetCurrentAuthenticatedUserId())).Any(x=>x.Name==environment2D.Name))
         {
-            return BadRequest("You already have a World with that name");
+            Console.WriteLine("World name exists for user");
+            return Conflict("You already have a World with that name");
         }
 
-        if (UserEnvs.Count >= 5)
+        if ((await _environmentRepository.SelectAsync(_authenticationService.GetCurrentAuthenticatedUserId())).Count() >=5)
         {
-            return BadRequest("World limit has been reached. Max of 5.");
+            return Conflict("World limit has been reached. Max of 5.");
         }
         
         environment2D.Id = Guid.NewGuid();
