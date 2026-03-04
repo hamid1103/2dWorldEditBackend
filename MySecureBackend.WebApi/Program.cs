@@ -56,6 +56,7 @@ builder.Services.AddTransient<IExampleObjectRepository, MemoryExampleObjectRepos
 
 // To use a SQL-backed repository instead, uncomment the following line:
 //builder.Services.AddTransient<IExampleObjectRepository, SqlExampleObjectRepository>(o => new SqlExampleObjectRepository(sqlConnectionString!));
+
 builder.Services.AddTransient<IEnvironmentRepository, SqlEnvironment2dRepository>(o =>
     new SqlEnvironment2dRepository(sqlConnectionString!));
 builder.Services.AddTransient<IObjectRepository, SqlObject2DRepository>(o =>

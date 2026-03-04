@@ -6,11 +6,11 @@ env: # Change these settings if you like
   PUBLISH_DIRECTORY: "./out/publish"
 on:
 #  Uncomment the following lines to enable automatic deployment on push to main, deployment, or master branches
-#  push:
-#    branches:
-#      - main
-#      - deployment
-#      - master 
+  push:
+    branches:
+      - main
+      - deployment
+      - master 
 
   # Allows you to run this workflow manually from the Actions tab.
   workflow_dispatch:
