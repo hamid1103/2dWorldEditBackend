@@ -50,8 +50,8 @@ public class EnvironmentsController : ControllerBase
     {
         var environment2D = await _environmentRepository.SelectAsync(environment2DId);
         if(IsAuthorized(environment2D.UserId))
-        if (environment2D == null)
-            return NotFound(new ProblemDetails { Detail = $"Environment {environment2DId} not found" });
+            if (environment2D == null)
+                return NotFound(new ProblemDetails { Detail = $"Environment {environment2DId} not found" });
 
         //Fetch Objects
         //ToDo: Add repository function to fetch objects by Environment Id - Done
